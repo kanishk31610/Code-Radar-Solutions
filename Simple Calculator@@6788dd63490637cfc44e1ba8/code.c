@@ -1,54 +1,25 @@
-// #include <stdio.h>
+#include<stdio.h>
 
-// int main(){
-//     int a,b;
-//     char c;
-//     scanf("%d %d",&a,&b);
-//     scanf(" %c", %c);
-//     switch(c){
-//         case '+':
-//         printf("%d",a+b);
-//         break;
-//         case '-':
-//         printf("%d",a-b);
-//         break;
-//         case '*':
-//         printf("%d",a*b);
-//         break;
-//         case '/':
-//         printf("%d",a/b);
-//         break;
-//     }
-//     return 0;
-// }
-
-
-
-#include <stdio.h>
-
-int main() {
-    int a, b;
-    char op;
-
-    // Reading two integers and an operator
-    scanf("%d %d %c", &a, &b, &op);
-
-    // Checking operator and performing the corresponding operation
-    if (op == '+') {
-        printf("%d", a + b);
-    } else if (op == '-') {
-        printf("%d", a - b);
-    } else if (op == '*') {
-        printf("%d", a * b);
-    } else if (op == '/') {
-        if (b == 0) {
-            printf("Error: Division by zero");
-        } else {
-            printf("%d", a / b);
-        }
-    } else {
-        printf("Error: Invalid operator");
+int main(){
+    int a,b;
+    char ch;
+    scanf("%d %d %c",&a,&b,&ch);
+    if(ch=='+'){
+        printf("%d",a+b);
     }
-
+    else if(ch=='-'){
+        printf("%d",a-b);
+    }
+    else if(ch=='*'){
+        printf("%d",a*b);
+    }
+    else if(ch=='/'){
+        if(b==0){
+            printf("Error");
+        }
+        else if{
+            printf("%d",a/b);
+        }
+    }
     return 0;
 }
