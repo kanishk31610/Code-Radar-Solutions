@@ -13,8 +13,8 @@ int main()
     for(int i =2;i<=x/2;i++)
     {
         if(x%i==0)
-        printf("Not Prime");
-        exit(0);
+        {printf("Not Prime");
+        exit(0);}
     }
     printf("Prime");
        
