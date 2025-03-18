@@ -2,5 +2,5 @@
 
 int fibonacciSeries(int n) {
     if (n <= 1) return n;
-    return fibonacci(n - 1) + fibonacci(n - 2);
+    return fibonacciSeries(n - 1) + fibonacciSeries(n - 2);
 }
