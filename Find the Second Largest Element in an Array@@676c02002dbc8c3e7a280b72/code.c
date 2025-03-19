@@ -20,7 +20,7 @@ int main(){
         }
     }
     if(slargest==-1){
-        printf("-1")
+        printf("-1");
     }
     else{
         printf("slargest");
