@@ -23,7 +23,7 @@ int main(){
         printf("-1");
     }
     else{
-        printf("slargest");
+        printf("%d",slargest);
     }
 
     return 0;
