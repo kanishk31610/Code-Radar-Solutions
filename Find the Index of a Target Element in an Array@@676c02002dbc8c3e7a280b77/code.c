@@ -9,8 +9,15 @@ int main(){
     }
     int t;
     scanf("%d",&t);
-    int d = arr[t];
-    printf("%d",d);
+    for(int i = 0;i<a;i++){
+        if(arr[i]==t){
+            printf("%d",i);
+        }
+        else{
+            printf("-1");
+        }
+    }
+
 
     return 0;
 }
