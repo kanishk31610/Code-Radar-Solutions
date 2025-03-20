@@ -17,7 +17,7 @@ int main(){
     }
     int prime = 0;
     for(int i = 0;i<a;i++){
-        if(int is_prime(arr[i])){
+        if( is_prime(arr[i])){
             prime++;
         }
     printf("%d",prime);
