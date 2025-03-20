@@ -20,8 +20,8 @@ int main(){
         if( is_prime(arr[i])){
             prime++;
         }
-    printf("%d",prime);
     }
+    printf("%d",prime);
     
 
     return 0;
