@@ -3,11 +3,14 @@
 
 int main(){
     char str[100];
-    gets(str);
-    for(int i=strlen(str);i>=0;i--){
-        printf("%c",str[i]);
+    int length;
+    if(fgets(str,sizeof(str),stdin)!=null){
+        str[strcspn(str,"\n")]='\0';
+        length=strlen(str);
+        for(int i =length-1;i>=0;i--){
+            printf("%c",str[i]);
+        }
     }
-    
     
     return 0;
 }
